@@ -10,7 +10,7 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 20px;
-	border: 2px solid #00dcff;
+	border: 2px solid #3b46ed;
 }
 
 .task-control{
@@ -20,8 +20,8 @@
 .task-text{
 	flex-basis: 80%;
 	text-align: center;
-	border-left: 15px solid #00ffa1;
-	border-right: 15px solid #ef00ff;
+	border-left: 15px solid #3ba8ed;
+	border-right: 15px solid #3ba8ed;
 }
 
 .tast-date{

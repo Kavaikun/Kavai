@@ -17,7 +17,7 @@ define('db_pass','admin_password');
 // Обявление класса для подключения к бд
 $db = new DB_class(db_host,db_name,db_user,db_pass);
 
-$query = $db->select(true,"*","tasks","task_id='1'");
+$query = $db->select(true,"*","tasks","");
 
 
 
@@ -41,7 +41,7 @@ $query = $db->select(true,"*","tasks","task_id='1'");
             <div class="task-control">
                 <input type="checkbox" name="">
             </div>
-            <div class="task-text"><?php echo $q9uery[$i]['task_text'] ?></div>
+            <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
             <div class="task-date">
                 <input type="date" name="">
             </div>		

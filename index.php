@@ -21,6 +21,7 @@ $query = $db->select(true,"*","tasks","task_id='1'");
 
 
 
+
 ?>
 
 
@@ -33,50 +34,22 @@ $query = $db->select(true,"*","tasks","task_id='1'");
 </head>
 <body>
 <div class="tasks">
-	<div class="task">
-		<div class="task-control">
-			<input type="checkbox" name="">
-		</div>
-		<div class="task-text">Проснуться утром</div>
-		<div class="task-date">
-			<input type="date" name="">
-		</div>		
-	</div>
-		<div class="task">
-		<div class="task-control">
-			<input type="checkbox" name="">
-		</div>
-		<div class="task-text">Открыть глаза</div>
-		<div class="task-date">
-			<input type="date" name="">
-		</div>		
-	</div>
-		<div class="task">
-		<div class="task-control">
-			<input type="checkbox" name="">
-		</div>
-		<div class="task-text">Встать с кровати</div>
-		<div class="task-date">
-			<input type="date" name="">
-		</div>		
-	</div>
-		<div class="task">
-		<div class="task-control">
-			<input type="checkbox" name="">
-		</div>
-		<div class="task-text">Сьесть чтото съедобое</div>
-		<div class="task-date">
-			<input type="date" name="">
-		</div>		
-	</div>
-		<div class="task">
-		<div class="task-control">
-			<input type="checkbox" name="">
-		</div>
-		<div class="task-text">Включить комп</div>
-		<div class="task-date">
-			<input type="date" name="">
-		</div>		
+    <?php
+    for($i=0;$i<count($query);$i++) {
+        ?>
+        <div class="task">
+            <div class="task-control">
+                <input type="checkbox" name="">
+            </div>
+            <div class="task-text"><?php echo $q9uery[$i]['task_text'] ?></div>
+            <div class="task-date">
+                <input type="date" name="">
+            </div>		
+        </div>	
+        <?php
+    }
+    ?>
+	
 </div>
 </body>
 </html>

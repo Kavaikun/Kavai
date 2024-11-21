@@ -43,7 +43,7 @@ $query = $db->select(true,"*","tasks","");
             </div>
             <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
             <div class="task-date">
-                <input type="date" name="">
+                <input type="date" name="" value="<?php echo $query[$i]['task_date'] ?>">
             </div>		
         </div>	
         <?php
